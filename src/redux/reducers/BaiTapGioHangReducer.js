@@ -46,6 +46,28 @@ const BaiTapGioHangReducer = (state = stateDefaut, action) => {
       state.gioHang = gioHangUpdate;
       return { ...state };
     }
+    case "TANG_GIAM": {
+        debugger;
+
+      let gioHangUpdate = [...state.gioHang];
+      let spGioHang = gioHangUpdate.find((sp) => sp.maSP === action.maSp);
+
+      if (spGioHang) {
+        //sp giohang !==undefine
+        //nếu mã sp có trong sp giỏ hàng thì thực hiện tăng giam
+        if (action.tangGiam) {
+          spGioHang.soLuong += 1;
+        } else {
+          if (spGioHang.soLuong > 1) {
+            spGioHang.soLuong -= 1;
+          }
+        }
+      }
+      console.log(spGioHang.soLuong)
+      //cập nhật lại state
+      state.gioHang = gioHangUpdate;
+      return { ...state };
+    }
   }
 
   return { ...state };

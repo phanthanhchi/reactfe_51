@@ -14,13 +14,34 @@ class GioHangRedux extends Component {
           <td>
             <img src={spGioHang.hinhAnh} width={30} height={30} />
           </td>
-          <td>{spGioHang.soLuong}</td>
-          <td>{spGioHang.giaBan}</td>
-          <td>{spGioHang.soLuong*spGioHang.giaBan}</td>
           <td>
-            <button className="btn btn-danger" onClick={()=>{
-                this.props.xoaGioHang(spGioHang.maSP)
-            }}>Xóa</button>
+            <button
+              onClick={() => {
+                this.props.tangGiamSP(spGioHang.maSP, false);
+              }}
+            >
+              -
+            </button>
+            {spGioHang.soLuong}
+            <button
+              onClick={() => {
+                this.props.tangGiamSP(spGioHang.maSP, true);
+              }}
+            >
+              +
+            </button>
+          </td>
+          <td>{spGioHang.giaBan}</td>
+          <td>{spGioHang.soLuong * spGioHang.giaBan}</td>
+          <td>
+            <button
+              className="btn btn-danger"
+              onClick={() => {
+                this.props.xoaGioHang(spGioHang.maSP);
+              }}
+            >
+              Xóa
+            </button>
           </td>
         </tr>
       );
@@ -54,18 +75,28 @@ const mapStateToProps = (rootReducer) => {
     gioHang: rootReducer.StateBaiTapGioHang.gioHang,
   };
 };
-const mapDispatchToProps=(dispatch)=>{
-    return{
-        xoaGioHang:(maSPClick)=>{
-            console.log(maSPClick);
-            //tạo ra action
-            const action = {
-                type: 'XOA_GIO_HANG',
-                maSPClick
-            }
-            //dùng hàm dispatch đưa lên reducer
-            dispatch(action);
-        }
-    }
-}
-export default connect(mapStateToProps,mapDispatchToProps)(GioHangRedux); //Kết nối giữa gioHangReduxComponent và redux store
+const mapDispatchToProps = (dispatch) => {
+  return {
+    xoaGioHang: (maSPClick) => {
+      console.log(maSPClick);
+      //tạo ra action
+      const action = {
+        type: "XOA_GIO_HANG",
+        maSPClick,
+      };
+      //dùng hàm dispatch đưa lên reducer
+      dispatch(action);
+    },
+    tangGiamSP: (maSPClick, tangGiam) => {
+      console.log(maSPClick);
+      const action = {
+        type: "TANG_GIAM",
+        maSp: maSPClick,
+        tangGiam,
+      };
+
+      dispatch(action);
+    },
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(GioHangRedux); //Kết nối giữa gioHangReduxComponent và redux store

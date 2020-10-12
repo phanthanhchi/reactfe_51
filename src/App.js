@@ -1,4 +1,5 @@
 import React from "react";
+import BaiTapGameXucXac from "./BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
 import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHangRedux";
 // import "./App.css";
 // import ChonMauXe from "./Components/BaiTapChonMauXe";
@@ -24,7 +25,8 @@ function App() {
    
       <DemoProps /> */}
       {/* <BaiTapGioHang /> */}
-      <BaiTapGioHangRedux />
+      {/* <BaiTapGioHangRedux /> */}
+      <BaiTapGameXucXac/>
     </div>
   );
 }
