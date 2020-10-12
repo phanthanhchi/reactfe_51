@@ -1,4 +1,5 @@
 //File khai báo tất cả các state của ứng dụng
+//
 import {combineReducers} from 'redux'
 import BaiTapGioHangReducer from './BaiTapGioHangReducer'
 
