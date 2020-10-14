@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "price": 30,
+    "name": "GUCCI G8850U",
+    "pic": "./img/v1.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  },
+
+  {
+    "id": 2,
+    "price": 50,
+    "name": "GUCCI G8759H",
+    "pic": "./img/v2.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  },
+
+  {
+    "id": 3,
+    "price": 30,
+    "name": "DIOR D6700HQ",
+    "pic": "./img/v3.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  },
+
+  {
+    "id": 4,
+    "price": 30,
+    "name": "DIOR D6005U",
+    "pic": "./img/v4.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  },
+
+  {
+    "id": 5,
+    "price": 30,
+    "name": "PRADA P8750",
+    "pic": "./img/v5.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  },
+
+  {
+    "id": 6,
+    "price": 30,
+    "name": "PRADA P9700",
+    "pic": "./img/v6.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  },
+
+  {
+    "id": 7,
+    "price": 30,
+    "name": "FENDI F8750",
+    "pic": "./img/v7.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  },
+
+  {
+    "id": 8,
+    "price": 30,
+    "name": "FENDI F8500",
+    "pic": "./img/v8.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  },
+
+  {
+    "id": 9,
+    "price": 30,
+    "name": "FENDI F4300",
+    "pic": "./img/v9.png",
+    "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+  }
+]
