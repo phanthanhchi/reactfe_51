@@ -1,7 +1,7 @@
 // 1/ xây dựng giao diện
 // 2/ xác định nguồn dữ liệu thay đổi
 //      + biến tài xỉu: string
-//      +
+//      + 
 import React, { Component } from "react";
 import DanhSachXucXac from "./DanhSachXucXac";
 import KetQuaTroChoi from "./KetQuaTroChoi";
