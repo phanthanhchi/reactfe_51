@@ -5,7 +5,7 @@ class KetQuaTroChoi extends Component {
   renderKetQua = () => {
     //sử dụng thuộc tính this.props.mangXucXac
     let tongDiem = this.props.mangXucXac.reduce((tongDiemXX, xucXac, index) => {
-      return (tongDiem += xucXac.so);
+      return (tongDiemXX += xucXac.so);
     }, 0);
     let ketQua = tongDiem > 9 ? "Tài" : "Xỉu";
     return (
