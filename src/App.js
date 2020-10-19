@@ -1,6 +1,7 @@
 import React from "react";
 import BaiTapGameXucXac from "./BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
 import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHangRedux";
+import BaiTapOanTuXi from "./BaiTapRedux/BaiTapOanTuXi/BaiTapOanTuXi";
 // import "./App.css";
 // import ChonMauXe from "./Components/BaiTapChonMauXe";
 // import BaiTap1 from "./Components/BaiTapLayoutComponent/BaiTapLayout1";
@@ -14,7 +15,6 @@ function App() {
   //! Bên trong lệnh return của function component là nội dung giao diện của thẻ này. Lưu ý: Nội dung component phải đc bao phủ bởi 1 thẻ bất kỳ
   return (
     <div>
-      
       {/* <BaiTap1 /> 
       <DataBinding /> 
       <HandelEvent />
@@ -26,7 +26,8 @@ function App() {
       <DemoProps /> */}
       {/* <BaiTapGioHang /> */}
       {/* <BaiTapGioHangRedux /> */}
-      <BaiTapGameXucXac/>
+      {/* <BaiTapGameXucXac/> */}
+      <BaiTapOanTuXi />
     </div>
   );
 }

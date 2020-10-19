@@ -21,8 +21,7 @@ export default class BaiTapGioHangRedux extends Component {
           <div className="text-right">Giỏ hàng (0)</div>
           <GioHangRedux />
         </div>
-        <div className="row">{this.renderSanPham()}
-        </div>
+        <div className="row">{this.renderSanPham()}</div>
       </div>
     );
   }
