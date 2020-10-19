@@ -10,6 +10,8 @@ import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHangRedux";
 // import DemoListAndKeys from "./Components/ListAndKeys/DemoListAndKeys";
 // import DemoProps from "./Components/Props/DemoProps";
 import BaiTapGioHang from "./Components/BaiTapGioHang";
+import DanhSachNguoiDung from "./FormComponent/DanhSachNguoiDung";
+import LifeCycle from "./LifeCycle/LifeCycle";
 function App() {
   //! Bên trong lệnh return của function component là nội dung giao diện của thẻ này. Lưu ý: Nội dung component phải đc bao phủ bởi 1 thẻ bất kỳ
   return (
@@ -26,7 +28,9 @@ function App() {
       <DemoProps /> */}
       {/* <BaiTapGioHang /> */}
       {/* <BaiTapGioHangRedux /> */}
-      <BaiTapGameXucXac/>
+      {/* <BaiTapGameXucXac/> */}
+      {/* <LifeCycle/> */}
+      <DanhSachNguoiDung/>
     </div>
   );
 }
