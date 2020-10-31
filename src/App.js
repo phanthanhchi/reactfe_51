@@ -1,4 +1,5 @@
 import React from "react";
+import BaiTapBookingTicket from "./BaiTapRedux/BaiTapBookingTicket/BaiTapBookingTicket";
 import BaiTapGameXucXac from "./BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
 import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHangRedux";
 // import "./App.css";
@@ -41,7 +42,8 @@ function App() {
       {/* <DemoHookUseEffect/> */}
       {/* <DemoUseCallBack/> */}
       {/* <DemoHookUseMemo/> */}
-      <GameXucXacF />
+      {/* <GameXucXacF /> */}
+      <BaiTapBookingTicket/>
     </div>
   );
 }
